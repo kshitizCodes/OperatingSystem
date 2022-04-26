@@ -1,0 +1,131 @@
+Lab Sheet 1 
+
+Basic Linux Commands and DOS Commands 
+
+Objective: To understand to setup the environment to run Linux and DOS Commands and execute different Linux and DOS Commands. 
+
+Basic Commands:  
+
+Login and Authentication Login access computer; start interactive session Logout disconnect terminal session Passwd change local login password; you MUST set a non-trivial password Information  
+
+date :show date and time  
+
+history :list of previously executed commands  
+
+pine :send or receive mail messages  
+
+msgs :display system messages  
+
+man :show on-line documentation by program name  
+
+info :on-line documentation for GNU programs  
+
+w, :who who is on the system and what are they doing  
+
+who :am i who is logged onto this terminal  
+
+top :show system status and top CPU-using processes  
+
+uptime :show one line summary of system status  
+
+finger :find out info about a user@system  
+
+ 
+
+File Management  
+
+cat combine files  
+
+cp copy files  
+
+ls list files in a directory and their attributes  
+
+mv change file name or directory location  
+
+rm remove files  
+
+ln create another link (name) to a file  
+
+chmod set file permissions  
+
+des encrypt a data file with a private key  
+
+find find files that match specified criteria  
+
+ 
+
+Display Contents of Files  
+
+cat copy file to display device  
+
+vi screen editor for modifying text files  
+
+more show text file on display terminal with paging control  
+
+head show first few lines of a file(s)  
+
+tail show last few lines of a file; or reverse line order  
+
+grep display lines that match a pattern  
+
+lpr send file to line printer  
+
+pr format file with page headers, multiple columns etc.  
+
+diff compare two files and show differences  
+
+cmp compare two binary files and report if different  
+
+od display binary file as equivalent octal/hex codes  
+
+file examine file(s) and tell you whether text, data, etc.  
+
+wc count characters, words, and lines in a file  
+
+ 
+
+Directories  
+
+cd change to new directory  
+
+mkdir create new directory  
+
+rmdir remove empty directory (remove files first)  
+
+mv change name of directory  
+
+pwd show current directory  
+
+ 
+
+Devices  
+
+df summarize free space on disk device  
+
+du show disk space used by files or directories  
+
+ 
+
+ 
+
+Description of Commonly Used UNIX Commands The description for the most commonly used UNIX commands is given below in an alphabetic order. 
+
+cat cat allows you to read multiple files and then print them out. You can combine files by using the > operator and append files by using >>.  
+
+Syntax: cat [argument] [specific file]  
+
+Example:  
+
+cat abc.txt If you want to append three files (abc.txt, def.txt, xyz.txt), give the command as, cat abc.txt def.txt xyz.txt > all 
+
+cd, chdir cd (or chdir) stands for ―change directory. This command is the key command to move around your file structure. Syntax: cd [name of directory you want to move to] When changing directories, start with / and then type the complete file path, like cd /vvs/abc/def in this eg. You are moving from vvs directory to abc directory then move to def directory . You can also move relative to the current directory by typing cd vvs/abc/def To move relative to the parent directory of your current directory, use Cd ../vvs/abc/def 
+
+chmod  
+
+chmod (which stands for ―change mode‖) changes who can access a particular file. A ―mode‖ is created by combining the various options from who, opcode, and permission. Syntax: chmod [option] mode file 
+
+ 
+
+cp The cp command copies files or directories from one place to another. You can copy a set of files to another file, or copy one or more files under the same name in a directory. If the destination of the file you want to copy is an existing file, then the existing file is overwritten. If the destination is an existing directory, then the file is copied into that directory. 
+
+Syntax: cp [options] file1 file2 If you want to copy the file favourites.html into the directory called laksh, you give the command as: cp favourites.html /vvs/laksh/ A handy option to use with cp is -r. This recursively copies a particular directory and all of its contents to the specified directory, so you won‘t have to copy one file at a time. 
